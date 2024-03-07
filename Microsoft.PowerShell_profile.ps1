@@ -30,7 +30,7 @@ Set-Alias -Name profeditnp -Value EditProfilePS1notepad -Description "Membuka fi
 Set-Alias -Name ga -Value Get-Alias -Description "Membuka list Alias"
 
 Set-Alias -Name ndir -Value NewDirectory -Description "Membuat direktori baru di lokasi yang ditentukan."
-Set-Alias -Name rndir -Value Rename-Folder -Description "Mengubah nama direktori."
+Set-Alias -Name rndir -Value RenameDirectory -Description "Mengubah nama direktori."
 Set-Alias -Name rmdirfile -Value RemoveFile -Description "Menghapus file atau direktori."
 
 Set-Alias -Name sfile -Value SearchFile -Description "Mencari file berdasarkan nama atau pola tertentu."
