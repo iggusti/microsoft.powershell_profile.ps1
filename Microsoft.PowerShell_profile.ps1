@@ -59,18 +59,20 @@ function NavigateBE { cd "C:\Users\DevTI-TelU\Code\Work\Telkom University\Back E
 function NavigateBaso { cd "C:\Users\DevTI-TelU\Code\Work\Telkom University\Front End\surat-online" }
 function NavigateEmom { cd "C:\Users\DevTI-TelU\Code\Work\Telkom University\Front End\emom" }
 function NavigateOneDataUSU { cd "C:\Users\DevTI-TelU\Code\Work\Telkom University\Front End\one-data-usu" }
+function NavigateSelfTaught { cd "C:\Users\DevTI-TelU\Code\Self-Taught" }
 function NavigateArsenic { cd "C:\xamppOld\htdocs\igracias-telu\branch\arsenic" }
 function RunVSCode { code . }
 function RunAngular { ng s -o }
 
 
 # Definisi alias untuk akses cepat ke fungsi-fungsi navigasi dan pengembangan
-Set-Alias -Name fe -Value NavigateFE -Description "Berpidah ke direktori 'Front End' pada proyek di Telkom University."
-Set-Alias -Name be -Value NavigateBE -Description "Berpidah ke direktori 'Back End' pada proyek di Telkom University."
-Set-Alias -Name baso -Value NavigateBaso -Description "Berpidah ke direktori proyek 'surat-online' di Telkom University."
-Set-Alias -Name emom -Value NavigateEmom -Description "Berpidah ke direktori proyek 'emom' di Telkom University."
-Set-Alias -Name onedatausu -Value NavigateOneDataUSU -Description "Berpidah ke direktori proyek 'one-data-usu' di Telkom University."
-Set-Alias -Name arsenic -Value NavigateArsenic -Description "Berpidah ke direktori proyek 'arsenic' dalam XAMPP."
+Set-Alias -Name fe -Value NavigateFE -Description "Berpindah ke direktori 'Front End' pada proyek di Telkom University."
+Set-Alias -Name be -Value NavigateBE -Description "Berpindah ke direktori 'Back End' pada proyek di Telkom University."
+Set-Alias -Name baso -Value NavigateBaso -Description "Berpindah ke direktori proyek 'surat-online' di Telkom University."
+Set-Alias -Name emom -Value NavigateEmom -Description "Berpindah ke direktori proyek 'emom' di Telkom University."
+Set-Alias -Name onedatausu -Value NavigateOneDataUSU -Description "Berpindah ke direktori proyek 'one-data-usu' di Telkom University."
+Set-Alias -Name mine -Value NavigateSelfTaught -Description "Berpindah ke direktori peroyek pribadi."
+Set-Alias -Name arsenic -Value NavigateArsenic -Description "Berpindah ke direktori proyek 'arsenic' dalam XAMPP."
 Set-Alias -Name c -Value RunVSCode -Description "Menjalankan Visual Studio Code di direktori saat ini."
 Set-Alias -Name okgas -Value RunAngular -Description "Menjalankan aplikasi Angular di mode pengembangan."
 
