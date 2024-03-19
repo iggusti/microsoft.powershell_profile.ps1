@@ -38,6 +38,7 @@ Set-Alias -Name rmdirfile -Value RemoveFile -Description "Menghapus file atau di
 
 Set-Alias -Name sfile -Value SearchFile -Description "Mencari file berdasarkan nama atau pola tertentu."
 Set-Alias -Name nfile -Value CreateNewFile -Description "Membuat file kosong di lokasi yang ditentukan."
+Set-Alias -Name touch -Value CreateNewFile -Description "Alias lain membuat file kosong di lokasi yang ditentukan."
 Set-Alias -Name rnfile -Value RenameFile -Description "Mengubah nama file atau direktori."
 
 Set-Alias -Name cmp -Value CompressItem -Description "Mengompresi file atau direktori menjadi arsip."
@@ -47,6 +48,7 @@ Set-Alias -Name mb -Value GetDirectorySize -Description "Mendapatkan ukuran tota
 
 Set-Alias -Name net -Value TestInternetConnection -Description "Memeriksa koneksi internet dan memberikan hasil dalam bentuk boolean (True/False)."
 Set-Alias -Name about -Value Get-ComputerInfo -Description "Mendapatkan informasi sistem komputer."
+Set-Alias -Name a -Value neofetch -Description "Mendapatkan informasi sistem komputer menggunakan neofetch."
 Set-Alias -Name e -Value ExitPowerShell -Description "Keluar dari sesi PowerShell."
 
 
@@ -75,6 +77,6 @@ Set-Alias -Name mine -Value NavigateSelfTaught -Description "Berpindah ke direkt
 Set-Alias -Name arsenic -Value NavigateArsenic -Description "Berpindah ke direktori proyek 'arsenic' dalam XAMPP."
 Set-Alias -Name c -Value RunVSCode -Description "Menjalankan Visual Studio Code di direktori saat ini."
 Set-Alias -Name okgas -Value RunAngular -Description "Menjalankan aplikasi Angular di mode pengembangan."
-
+Set-Alias -Name okegas -Value RunAngular -Description "Alias lain untuk menjalankan Angular di mode pengembangan."
 
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#  Created by IGGusti  #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
