@@ -4,8 +4,9 @@ Import-Module -Name Terminal-Icons
 # Definisi fungsi-fungsi untuk akses cepat ke profil PowerShell
 function ShowProfilePS1 { bat $profile }
 function EditProfilePS1nano { nano $profile }
-function EditProfilePS1nvim { cd "C:\Users\DevTI-TelU\OneDrive\Dokumen\WIndowsPowerShell"; nvim . }
+function EditProfilePS1nvim { cd "C:\Users\DevTI-TelU\OneDrive\Dokumen\WindowsPowerShell"; nvim . }
 function EditProfilePS1notepad { notepad $profile }
+function PushToGithubPS1 { cd "C:\Users\DevTI-TelU\OneDrive\Dokumen\WindowsPowerShell"; git add .; git commit -m "update $profile"; git push }
 
 function NewDirectory { param($Path) New-Item -ItemType Directory -Path $Path }
 function RenameDirectory { param($OldPath,$NewName) Rename-Item -Path $OldPath -NewName $NewName }
@@ -31,6 +32,7 @@ Set-Alias -Name profeditnano -Value EditProfilePS1nano -Description "Membuka fil
 Set-Alias -Name profeditnvim -Value EditProfilePS1nvim -Description "Membuka file profil PowerShell dalam Neovim."
 Set-Alias -Name profeditnp -Value EditProfilePS1notepad -Description "Membuka file profil PowerShell dalam notepad."
 Set-Alias -Name ga -Value Get-Alias -Description "Membuka list Alias"
+Set-Alias -Name pushprofile -Value PushToGithubPS1 -Description "Push ke Github $profile"
 
 Set-Alias -Name ndir -Value NewDirectory -Description "Membuat direktori baru di lokasi yang ditentukan."
 Set-Alias -Name rndir -Value RenameDirectory -Description "Mengubah nama direktori."
@@ -62,7 +64,7 @@ function NavigateBaso { cd "C:\Users\DevTI-TelU\Code\Work\Telkom University\Fron
 function NavigateEmom { cd "C:\Users\DevTI-TelU\Code\Work\Telkom University\Front End\emom" }
 function NavigateOneDataUSU { cd "C:\Users\DevTI-TelU\Code\Work\Telkom University\Front End\one-data-usu" }
 function NavigateSelfTaught { cd "C:\Users\DevTI-TelU\Code\Self-Taught" }
-function NavigateArsenic { cd "C:\xamppOld\htdocs\igracias-telu\branch\arsenic" }
+function NavigateArsenic { cd "C:\xamppOld\htdocs\igracias-telu\branch\arsenic"; code .; start . }
 function RunVSCode { code . }
 function RunAngular { ng s -o }
 
