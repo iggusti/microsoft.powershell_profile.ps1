@@ -6,7 +6,7 @@ function ShowProfilePS1 { bat $profile }
 function EditProfilePS1nano { nano $profile }
 function EditProfilePS1nvim { cd "C:\Users\DevTI-TelU\OneDrive\Dokumen\WindowsPowerShell"; nvim . }
 function EditProfilePS1notepad { notepad $profile }
-function PushToGithubPS1 { cd "C:\Users\DevTI-TelU\OneDrive\Dokumen\WindowsPowerShell"; git add .; git commit -m "update $profile"; git push }
+function PushToGithubPS1 { cd "C:\Users\DevTI-TelU\OneDrive\Dokumen\WindowsPowerShell"; git add .; git commit -m "update $profile"; git push; git log --pretty=format:"%h%x09%an%x09%ad%x09%s" }
 
 function NewDirectory { param($Path) New-Item -ItemType Directory -Path $Path }
 function RenameDirectory { param($OldPath,$NewName) Rename-Item -Path $OldPath -NewName $NewName }
@@ -65,6 +65,7 @@ function NavigateEmom { cd "C:\Users\DevTI-TelU\Code\Work\Telkom University\Fron
 function NavigateOneDataUSU { cd "C:\Users\DevTI-TelU\Code\Work\Telkom University\Front End\one-data-usu" }
 function NavigateSelfTaught { cd "C:\Users\DevTI-TelU\Code\Self-Taught" }
 function NavigateArsenic { cd "C:\xamppOld\htdocs\igracias-telu\branch\arsenic"; code .; start . }
+function GitPrettyLog { git log --pretty=format:"%h%x09%an%x09%ad%x09%s" }
 function RunVSCode { code . }
 function RunAngular { ng s -o }
 
@@ -77,6 +78,7 @@ Set-Alias -Name emom -Value NavigateEmom -Description "Berpindah ke direktori pr
 Set-Alias -Name onedatausu -Value NavigateOneDataUSU -Description "Berpindah ke direktori proyek 'one-data-usu' di Telkom University."
 Set-Alias -Name mine -Value NavigateSelfTaught -Description "Berpindah ke direktori peroyek pribadi."
 Set-Alias -Name arsenic -Value NavigateArsenic -Description "Berpindah ke direktori proyek 'arsenic' dalam XAMPP."
+Set-Alias -Name gitprettylog -Value GitPrettyLog -Description "Melihat Log Github terkini."
 Set-Alias -Name c -Value RunVSCode -Description "Menjalankan Visual Studio Code di direktori saat ini."
 Set-Alias -Name okgas -Value RunAngular -Description "Menjalankan aplikasi Angular di mode pengembangan."
 Set-Alias -Name okegas -Value RunAngular -Description "Alias lain untuk menjalankan Angular di mode pengembangan."
