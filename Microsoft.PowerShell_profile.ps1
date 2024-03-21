@@ -6,7 +6,7 @@ function ShowProfilePS1 { bat $profile }
 function EditProfilePS1nano { nano $profile }
 function EditProfilePS1nvim { cd "C:\Users\DevTI-TelU\OneDrive\Dokumen\WindowsPowerShell"; nvim . }
 function EditProfilePS1notepad { notepad $profile }
-function PushToGithubPS1 { cd "C:\Users\DevTI-TelU\OneDrive\Dokumen\WindowsPowerShell"; git add .; git commit -m "update Microsoft.PowerShell_profile.ps1"; git push; git log --pretty=format:"%h%x09%an%x09%ad%x09%s" }
+function PushToGithubPS1 { cd "C:\Users\DevTI-TelU\OneDrive\Dokumen\WindowsPowerShell"; git add .; git commit -m "update Microsoft.PowerShell_profile.ps1"; git push; git log --pretty='%C(cyan)%ad %C(yellow)%h %C(cyan)%d %Creset%s' --date-order --graph --date=iso }
 
 function NewDirectory { param($Path) New-Item -ItemType Directory -Path $Path }
 function RenameDirectory { param($OldPath,$NewName) Rename-Item -Path $OldPath -NewName $NewName }
@@ -65,7 +65,7 @@ function NavigateEmom { cd "C:\Users\DevTI-TelU\Code\Work\Telkom University\Fron
 function NavigateOneDataUSU { cd "C:\Users\DevTI-TelU\Code\Work\Telkom University\Front End\one-data-usu" }
 function NavigateSelfTaught { cd "C:\Users\DevTI-TelU\Code\Self-Taught" }
 function NavigateArsenic { cd "C:\xamppOld\htdocs\igracias-telu\branch\arsenic"; code .; start . }
-function ViewGitPrettyLog { git log --pretty=format:"%h%x09%an%x09%ad%x09%s" }
+function ViewGitPrettyLog { git log --pretty='%C(cyan)%ad %C(yellow)%h %C(cyan)%d %Creset%s' --date-order --graph --date=iso }
 function RunVSCode { code . }
 function RunAngular { ng s -o }
 
