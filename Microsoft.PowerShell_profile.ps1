@@ -6,7 +6,7 @@ function ShowProfilePS1 { bat $profile }
 function EditProfilePS1nano { nano $profile }
 function EditProfilePS1nvim { cd "C:\Users\DevTI-TelU\OneDrive\Dokumen\WindowsPowerShell"; nvim . }
 function EditProfilePS1notepad { notepad $profile }
-function PushToGithubPS1 { cd "C:\Users\DevTI-TelU\OneDrive\Dokumen\WindowsPowerShell"; git add .; git commit -m "update $profile"; git push; git log --pretty=format:"%h%x09%an%x09%ad%x09%s" }
+function PushToGithubPS1 { cd "C:\Users\DevTI-TelU\OneDrive\Dokumen\WindowsPowerShell"; git add .; git commit -m "update Microsoft.PowerShell_profile.ps1"; git push; git log --pretty=format:"%h%x09%an%x09%ad%x09%s" }
 
 function NewDirectory { param($Path) New-Item -ItemType Directory -Path $Path }
 function RenameDirectory { param($OldPath,$NewName) Rename-Item -Path $OldPath -NewName $NewName }
