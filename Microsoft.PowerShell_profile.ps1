@@ -10,7 +10,6 @@ function PushToGithubPS1 { cd "C:\Users\DevTI-TelU\OneDrive\Dokumen\WindowsPower
 
 function NewDirectory { param($Path) New-Item -ItemType Directory -Path $Path }
 function RenameDirectory { param($OldPath,$NewName) Rename-Item -Path $OldPath -NewName $NewName }
-function RemoveFileDirectory { param($Path) Remove-Item -Path $Path -Confirm:$false }
 
 function SearchFile { param($FileName) Get-ChildItem -Recurse | ? { $_.Name -like "*$FileName*" } | select FullName }
 function CreateNewFile { Set-Content -Path ($args[0]) -Value ($null) }
@@ -36,7 +35,6 @@ Set-Alias -Name pushprofile -Value PushToGithubPS1 -Description "Push ke Github 
 
 Set-Alias -Name ndir -Value NewDirectory -Description "Membuat direktori baru di lokasi yang ditentukan."
 Set-Alias -Name rndir -Value RenameDirectory -Description "Mengubah nama direktori."
-Set-Alias -Name rmdirfile -Value RemoveFile -Description "Menghapus file atau direktori."
 
 Set-Alias -Name sfile -Value SearchFile -Description "Mencari file berdasarkan nama atau pola tertentu."
 Set-Alias -Name nfile -Value CreateNewFile -Description "Membuat file kosong di lokasi yang ditentukan."
