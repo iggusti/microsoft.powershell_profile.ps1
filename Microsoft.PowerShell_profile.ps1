@@ -70,12 +70,12 @@ function RunAngularOpen { ng s -o }
 
 
 # Definisi alias untuk akses cepat ke fungsi-fungsi navigasi dan pengembangan
+Set-Alias -Name mine -Value NavigateSelfTaught -Description "Berpindah ke direktori peroyek pribadi."
 Set-Alias -Name fe -Value NavigateFE -Description "Berpindah ke direktori 'Front End' pada proyek di Telkom University."
 Set-Alias -Name be -Value NavigateBE -Description "Berpindah ke direktori 'Back End' pada proyek di Telkom University."
 Set-Alias -Name baso -Value NavigateBaso -Description "Berpindah ke direktori proyek 'surat-online' di Telkom University."
 Set-Alias -Name emom -Value NavigateEmom -Description "Berpindah ke direktori proyek 'emom' di Telkom University."
 Set-Alias -Name onedatausu -Value NavigateOneDataUSU -Description "Berpindah ke direktori proyek 'one-data-usu' di Telkom University."
-Set-Alias -Name mine -Value NavigateSelfTaught -Description "Berpindah ke direktori peroyek pribadi."
 Set-Alias -Name arsenic -Value NavigateArsenic -Description "Berpindah ke direktori proyek 'arsenic' dalam XAMPP."
 Set-Alias -Name gitprettylog -Value ViewGitPrettyLog -Description "Melihat Log Github terkini."
 Set-Alias -Name c -Value RunVSCode -Description "Menjalankan Visual Studio Code di direktori saat ini."
