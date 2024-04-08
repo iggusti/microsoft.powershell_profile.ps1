@@ -4,9 +4,9 @@ Import-Module -Name Terminal-Icons
 # Definisi fungsi-fungsi untuk akses cepat ke profil PowerShell
 function ShowProfilePS1 { bat $profile }
 function EditProfilePS1nano { nano $profile }
-function EditProfilePS1nvim { cd ~; cd "OneDrive\Dokumen\WindowsPowerShell"; nvim . }
+function EditProfilePS1nvim { cd "~\OneDrive\Dokumen\WindowsPowerShell"; nvim . }
 function EditProfilePS1notepad { notepad $profile }
-function PushToGithubPS1 { cd ~; cd "OneDrive\Dokumen\WindowsPowerShell"; git add .; git commit -m "update Microsoft.PowerShell_profile.ps1"; git push; git log --pretty='%C(cyan)%ad %C(yellow)%h %C(cyan)%d %Creset%s' --date-order --graph --date=iso }
+function PushToGithubPS1 { cd "~\OneDrive\Dokumen\WindowsPowerShell"; git add .; git commit -m "update Microsoft.PowerShell_profile.ps1"; git push; git log --pretty='%C(cyan)%ad %C(yellow)%h %C(cyan)%d %Creset%s' --date-order --graph --date=iso }
 
 function NewDirectory { param($Path) New-Item -ItemType Directory -Path $Path }
 function RenameDirectory { param($OldPath,$NewName) Rename-Item -Path $OldPath -NewName $NewName }
@@ -56,12 +56,12 @@ Set-Alias -Name e -Value ExitPowerShell -Description "Keluar dari sesi PowerShel
 
 
 # Fungsi-fungsi untuk navigasi cepat ke direktori-direktori umum
-function NavigateFE { cd ~; cd "Code\Work\Telkom University\Front End" }
-function NavigateBE { cd ~; cd "Code\Work\Telkom University\Back End" }
-function NavigateBaso { cd ~; cd "Code\Work\Telkom University\Front End\surat-online" }
-function NavigateEmom { cd ~; cd "Code\Work\Telkom University\Front End\emom" }
-function NavigateOneDataUSU { cd ~; cd "Code\Work\Telkom University\Front End\one-data-usu" }
-function NavigateSelfTaught { cd ~; cd "Code\Self-Taught" }
+function NavigateSelfTaught { cd "~\Code\Self-Taught" }
+function NavigateFE { cd "~\Code\Work\Telkom University\Front End" }
+function NavigateBE { cd "~\Code\Work\Telkom University\Back End" }
+function NavigateBaso { cd "~\Code\Work\Telkom University\Front End\surat-online" }
+function NavigateEmom { cd "~\Code\Work\Telkom University\Front End\emom" }
+function NavigateOneDataUSU { cd "~\Code\Work\Telkom University\Front End\one-data-usu" }
 function NavigateArsenic { cd "C:\xamppOld\htdocs\igracias-telu\branch\arsenic"; code .; start . }
 function ViewGitPrettyLog { git log --pretty='%C(cyan)%ad %C(yellow)%h %C(cyan)%d %Creset%s' --date-order --graph --date=iso }
 function RunVSCode { code . }
