@@ -56,6 +56,7 @@ Set-Alias -Name e -Value ExitPowerShell -Description "Keluar dari sesi PowerShel
 
 
 # Fungsi-fungsi untuk navigasi cepat ke direktori-direktori umum
+function RemovePSReadLineOption { notepad (Get-PSReadLineOption).HistorySavePath }
 function NavigateSelfTaught { cd "~\Code\Self-Taught" }
 function NavigateFE { cd "~\Code\Work\Telkom University\Front End" }
 function NavigateBE { cd "~\Code\Work\Telkom University\Back End" }
@@ -71,6 +72,7 @@ function RunAngularOpen { ng s -o }
 
 
 # Definisi alias untuk akses cepat ke fungsi-fungsi navigasi dan pengembangan
+Set-Alias -Name fixHistory -Value RemovePSReadLineOption -Description "Memperbaiki history yang salah."
 Set-Alias -Name mine -Value NavigateSelfTaught -Description "Berpindah ke direktori peroyek pribadi."
 Set-Alias -Name fe -Value NavigateFE -Description "Berpindah ke direktori 'Front End' pada proyek di Telkom University."
 Set-Alias -Name be -Value NavigateBE -Description "Berpindah ke direktori 'Back End' pada proyek di Telkom University."
