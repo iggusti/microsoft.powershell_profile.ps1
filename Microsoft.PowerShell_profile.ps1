@@ -62,6 +62,7 @@ function NavigateBE { cd "~\Code\Work\Telkom University\Back End" }
 function NavigateBaso { cd "~\Code\Work\Telkom University\Front End\surat-online" }
 function NavigateEmom { cd "~\Code\Work\Telkom University\Front End\emom" }
 function NavigateOneDataUSU { cd "~\Code\Work\Telkom University\Front End\one-data-usu" }
+function NavigationRis { cd "~\Code\Work\Telkom University\Front End\regulation-information-system" }
 function NavigateArsenic { cd "C:\xamppOld\htdocs\igracias-telu\branch\arsenic"; code .; start . }
 function ViewGitPrettyLog { git log --pretty='%C(cyan)%ad %C(yellow)%h %C(cyan)%d %Creset%s' --date-order --graph --date=iso }
 function RunVSCode { code . }
@@ -76,6 +77,7 @@ Set-Alias -Name be -Value NavigateBE -Description "Berpindah ke direktori 'Back 
 Set-Alias -Name baso -Value NavigateBaso -Description "Berpindah ke direktori proyek 'surat-online' di Telkom University."
 Set-Alias -Name emom -Value NavigateEmom -Description "Berpindah ke direktori proyek 'emom' di Telkom University."
 Set-Alias -Name onedatausu -Value NavigateOneDataUSU -Description "Berpindah ke direktori proyek 'one-data-usu' di Telkom University."
+Set-Alias -Name ris -Value NavigationRis -Description "Berpindah ke direktori proyek 'eris' di Telkom University."
 Set-Alias -Name arsenic -Value NavigateArsenic -Description "Berpindah ke direktori proyek 'arsenic' dalam XAMPP."
 Set-Alias -Name gitprettylog -Value ViewGitPrettyLog -Description "Melihat Log Github terkini."
 Set-Alias -Name c -Value RunVSCode -Description "Menjalankan Visual Studio Code di direktori saat ini."
