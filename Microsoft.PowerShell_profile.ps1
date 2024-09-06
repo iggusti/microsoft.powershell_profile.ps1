@@ -71,7 +71,7 @@ function RunAngularOpen { ng s -o }
 
 
 # Definisi alias untuk akses cepat ke fungsi-fungsi navigasi dan pengembangan
-Set-Alias -Name fixHistory -Value RemovePSReadLineOption -Description "Berpindah ke direktori peroyek pribadi."
+Set-Alias -Name fixHistory -Value RemovePSReadLineOption -Description "Memperbaiki history yang salah."
 Set-Alias -Name mine -Value NavigateSelfTaught -Description "Berpindah ke direktori peroyek pribadi."
 Set-Alias -Name fe -Value NavigateFE -Description "Berpindah ke direktori 'Front End' pada proyek di Telkom University."
 Set-Alias -Name be -Value NavigateBE -Description "Berpindah ke direktori 'Back End' pada proyek di Telkom University."
