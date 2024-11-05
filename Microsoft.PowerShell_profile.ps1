@@ -1,4 +1,4 @@
-oh-my-posh --init --shell pwsh --config ~\AppData\Local\Programs\oh-my-posh\themes\tokyo.omp.json | Invoke-Expression
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\atomic.omp.json" | Invoke-Expression
 Import-Module -Name Terminal-Icons
 
 # Definisi fungsi-fungsi untuk akses cepat ke profil PowerShell
