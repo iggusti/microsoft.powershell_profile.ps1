@@ -7,6 +7,7 @@ function EditProfilePS1nano { nano $profile }
 function EditProfilePS1nvim { cd "~\OneDrive\Dokumen\WindowsPowerShell"; nvim . }
 function EditProfilePS1notepad { notepad $profile }
 function PushToGithubPS1 { cd "~\OneDrive\Dokumen\WindowsPowerShell"; git add .; git commit -m "update Microsoft.PowerShell_profile.ps1"; git push; git log --pretty='%C(cyan)%ad %C(yellow)%h %C(cyan)%d %Creset%s' --date-order --graph --date=iso }
+function GetPowerShellHistory { notepad (Get-PSReadlineOption).HistorySavePath }
 
 function NewDirectory { param($Path) New-Item -ItemType Directory -Path $Path }
 function RenameDirectory { param($OldPath,$NewName) Rename-Item -Path $OldPath -NewName $NewName }
@@ -31,7 +32,8 @@ Set-Alias -Name profeditnano -Value EditProfilePS1nano -Description "Membuka fil
 Set-Alias -Name profeditnvim -Value EditProfilePS1nvim -Description "Membuka file profil PowerShell dalam Neovim."
 Set-Alias -Name profeditnp -Value EditProfilePS1notepad -Description "Membuka file profil PowerShell dalam notepad."
 Set-Alias -Name ga -Value Get-Alias -Description "Membuka list Alias"
-Set-Alias -Name pushprofile -Value PushToGithubPS1 -Description "Push ke Github $profile"
+Set-Alias -Name pushprofile -Value PushToGithubPS1 -Description "Push ke Github $profile."
+Set-Alias -Name his -Value GetPowerShellHistory -Description "Membuka history dari PowerShell dalam notepad."
 
 Set-Alias -Name ndir -Value NewDirectory -Description "Membuat direktori baru di lokasi yang ditentukan."
 Set-Alias -Name rndir -Value RenameDirectory -Description "Mengubah nama direktori."
