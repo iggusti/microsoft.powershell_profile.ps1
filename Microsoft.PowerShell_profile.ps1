@@ -62,11 +62,12 @@ function RemovePSReadLineOption { notepad (Get-PSReadLineOption).HistorySavePath
 function NavigateSelfTaught { cd "~\Code\Self-Taught" }
 function NavigateFE { cd "~\Code\Work\Telkom University\Front End" }
 function NavigateBE { cd "~\Code\Work\Telkom University\Back End" }
-function NavigateBaso { cd "~\Code\Work\Telkom University\Front End\baso" }
-function NavigateEmom { cd "~\Code\Work\Telkom University\Front End\emom" }
+function NavigateBaSO { cd "~\Code\Work\Telkom University\Front End\baso" }
+function NavigateEMoM { cd "~\Code\Work\Telkom University\Front End\emom" }
 function NavigateOneDataUSU { cd "~\Code\Work\Telkom University\Front End\one-data-usu" }
-function NavigateSoang { cd "~\Code\Work\Telkom University\Front End\soang" }
+function NavigateSOANG { cd "~\Code\Work\Telkom University\Front End\soang" }
 function NavigateTAPA { cd "~\Code\Work\Telkom University\Front End\ta-pa" }
+function NavigatePenDok { cd "~\Code\Work\Telkom University\Front End\document-management" }
 function NavigateArsenic { cd "C:\xamppOld\htdocs\igracias-telu\branch\arsenic"; code .; start . }
 function ViewGitPrettyLog { git log --pretty='%C(cyan)%ad %C(yellow)%h %C(cyan)%d %Creset%s' --date-order --graph --date=iso }
 function RunVSCode { code . }
@@ -79,11 +80,12 @@ Set-Alias -Name fixHistory -Value RemovePSReadLineOption -Description "Memperbai
 Set-Alias -Name mine -Value NavigateSelfTaught -Description "Berpindah ke direktori peroyek pribadi."
 Set-Alias -Name fe -Value NavigateFE -Description "Berpindah ke direktori 'Front End' pada proyek di Telkom University."
 Set-Alias -Name be -Value NavigateBE -Description "Berpindah ke direktori 'Back End' pada proyek di Telkom University."
-Set-Alias -Name baso -Value NavigateBaso -Description "Berpindah ke direktori proyek 'surat-online' di Telkom University."
-Set-Alias -Name emom -Value NavigateEmom -Description "Berpindah ke direktori proyek 'emom' di Telkom University."
+Set-Alias -Name baso -Value NavigateBaSO -Description "Berpindah ke direktori proyek 'surat-online' di Telkom University."
+Set-Alias -Name emom -Value NavigateEMoM -Description "Berpindah ke direktori proyek 'emom' di Telkom University."
 Set-Alias -Name onedatausu -Value NavigateOneDataUSU -Description "Berpindah ke direktori proyek 'one-data-usu' di Telkom University."
-Set-Alias -Name soang -Value NavigateSoang -Description "Berpindah ke direktori proyek 'soang' di Telkom University."
+Set-Alias -Name soang -Value NavigateSOANG -Description "Berpindah ke direktori proyek 'soang' di Telkom University."
 Set-Alias -Name tapa -Value NavigateTAPA -Description "Berpindah ke direktori proyek 'ta-pa' di Telkom University."
+Set-Alias -Name pendok -Value NavigatePenDok -Description "Berpindah ke direktori proyek 'pendok' di Telkom University."
 Set-Alias -Name arsenic -Value NavigateArsenic -Description "Berpindah ke direktori proyek 'arsenic' dalam XAMPP."
 Set-Alias -Name gitprettylog -Value ViewGitPrettyLog -Description "Melihat Log Github terkini."
 Set-Alias -Name c -Value RunVSCode -Description "Menjalankan Visual Studio Code di direktori saat ini."
