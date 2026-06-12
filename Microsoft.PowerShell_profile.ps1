@@ -71,7 +71,7 @@ function NavigatePenDok { cd "~\Code\Work\Telkom University\Front End\document-m
 function NavigateArsenic { cd "C:\xamppOld\htdocs\igracias-telu\branch\arsenic"; code .; start . }
 function ViewGitPrettyLog { git log --pretty='%C(cyan)%ad %C(yellow)%h %C(cyan)%d %Creset%s' --date-order --graph --date=iso }
 function RunVSCode { code . }
-function RunAngular { ng s }
+function RunDevMode { npm run dev }
 function RunAngularOpen { ng s -o }
 
 
@@ -89,7 +89,7 @@ Set-Alias -Name pendok -Value NavigatePenDok -Description "Berpindah ke direktor
 Set-Alias -Name arsenic -Value NavigateArsenic -Description "Berpindah ke direktori proyek 'arsenic' dalam XAMPP."
 Set-Alias -Name gitprettylog -Value ViewGitPrettyLog -Description "Melihat Log Github terkini."
 Set-Alias -Name c -Value RunVSCode -Description "Menjalankan Visual Studio Code di direktori saat ini."
-Set-Alias -Name okgas -Value RunAngular -Description "Menjalankan aplikasi Angular di mode pengembangan."
+Set-Alias -Name omonomon -Value RunDevMode -Description "Menjalankan aplikasi berbasis node di mode pengembangan."
 Set-Alias -Name okegas -Value RunAngularOpen -Description "Alias lain untuk menjalankan Angular di mode pengembangan, lalu open browser."
 
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#  Created by IGGusti  #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
