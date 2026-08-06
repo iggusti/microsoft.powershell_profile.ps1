@@ -97,13 +97,14 @@ Set-Alias -Name okegas -Value RunAngularOpen -Description "Alias lain untuk menj
 # List of commonly used AI CLI tools along with example commands to run them
 $Global:AITools = @(
 @{ Name = 'opencode'; Desc = 'AI coding agent via terminal'; Run = 'opencode .' },
-    @{ Name = 'gemini';   Desc = 'Google Gemini CLI';           Run = 'gemini' },
+@{ Name = 'gemini';   Desc = 'Google Gemini CLI';           Run = 'gemini' },
     @{ Name = 'codex';    Desc = 'OpenAI Codex CLI';            Run = 'codex' },
     @{ Name = 'claude';   Desc = 'Anthropic Claude Code';       Run = 'claude' },
     @{ Name = 'cursor';   Desc = 'Cursor AI editor';            Run = 'cursor .' },
     @{ Name = 'kilo';     Desc = 'Kilo Code CLI';               Run = 'kilo' },
     @{ Name = 'qwen';     Desc = 'Alibaba Qwen CLI';            Run = 'qwen' },
     @{ Name = 'cline';    Desc = 'Cline Autonomous Coding Agent'; Run = 'cline' },
+    @{ Name = 'codebuff'; Desc = 'Codebuff AI Coding Assistant'; Run = 'codebuff' },
     @{ Name = 'toad';     Desc = 'Toad CLI Tool';               Run = 'toad' }
 )
 
