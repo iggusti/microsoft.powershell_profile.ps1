@@ -92,42 +92,44 @@ Set-Alias -Name c -Value RunVSCode -Description "Menjalankan Visual Studio Code 
 Set-Alias -Name omonomon -Value RunDevMode -Description "Menjalankan aplikasi berbasis node di mode pengembangan."
 Set-Alias -Name okegas -Value RunAngularOpen -Description "Alias lain untuk menjalankan Angular di mode pengembangan, lalu open browser."
 
-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-##-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#  AI Tools Function  #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-##-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#  AI CLI Tools Function  #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
 
-# List of commonly used AI CLI tools along with example commands to run them
 $Global:AITools = @(
-@{ Name = 'opencode'; Desc = 'AI coding agent via terminal'; Run = 'opencode .' },
-@{ Name = 'gemini';   Desc = 'Google Gemini CLI';           Run = 'gemini' },
-    @{ Name = 'codex';    Desc = 'OpenAI Codex CLI';            Run = 'codex' },
-    @{ Name = 'cursor';   Desc = 'Cursor AI editor';            Run = 'cursor .' },
-    @{ Name = 'kilo';     Desc = 'Kilo Code CLI';               Run = 'kilo' },
-    @{ Name = 'cline';    Desc = 'Cline Autonomous Coding Agent'; Run = 'cline' }
+    @{ Name = 'opencode'; Desc = 'AI coding agent via terminal'; Run = 'opencode .' },
+    @{ Name = 'gemini';   Desc = 'Google Gemini CLI';            Run = 'gemini' },
+    @{ Name = 'codex';    Desc = 'OpenAI Codex CLI';             Run = 'codex' },
+    @{ Name = 'kilo';     Desc = 'Kilo Code CLI';                Run = 'kilo' },
+    @{ Name = 'kiro';     Desc = 'Kiro AI CLI';                  Run = 'kiro-cli' },
+    @{ Name = 'cline';    Desc = 'AI coding agent in terminal'; Run = 'cline' }
 )
 
 function ShowAIList {
     $found = @()
     foreach ($tool in $Global:AITools) {
-        if (Get-Command $tool.Name -ErrorAction SilentlyContinue) {
+        # Ambil perintah utama dari atribut 'Run' (misal: 'kiro-cli' dari 'kiro-cli')
+        $cmdName = $tool.Run.Split(' ')[0]
+        
+        if (Get-Command $cmdName -ErrorAction SilentlyContinue) {
             $found += [PSCustomObject]@{
-                Name = $tool.Name
+                Name        = $tool.Name
                 Description = $tool.Desc
-                HowToRun = $tool.Run
+                HowToRun    = $tool.Run
             }
         }
     }
 
     Write-Host ""
-    Write-Host "  === INSTALLED AI TOOLS ===" -ForegroundColor Cyan
-    Write-Host "  ---------------------------" -ForegroundColor DarkCyan
+    Write-Host "  === INSTALLED AI CLI TOOLS ===" -ForegroundColor Cyan
+    Write-Host "  ------------------------------" -ForegroundColor DarkCyan
     if ($found.Count -gt 0) {
         $found | Format-Table Name, Description, HowToRun -AutoSize
     } else {
         Write-Host "  (No AI tools installed)" -ForegroundColor Yellow
     }
-    Write-Host "  ---------------------------" -ForegroundColor DarkCyan
+    Write-Host "  ------------------------------" -ForegroundColor DarkCyan
     Write-Host ""
 }
 
 Set-Alias -Name ailist -Value ShowAIList -Description "Displays the list of installed AI CLI tools."
 
-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#  Created by IGGusti  #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#  Created by IGGusti  #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
