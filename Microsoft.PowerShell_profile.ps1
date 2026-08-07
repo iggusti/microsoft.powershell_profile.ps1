@@ -119,14 +119,14 @@ function ShowAIList {
     }
 
     Write-Host ""
-    Write-Host "  === INSTALLED AI CLI TOOLS ===" -ForegroundColor Cyan
-    Write-Host "  ------------------------------" -ForegroundColor DarkCyan
+    Write-Host "  ========= INSTALLED AI CLI TOOLS =========" -ForegroundColor Cyan
+    Write-Host "  ------------------------------------------" -ForegroundColor DarkCyan
     if ($found.Count -gt 0) {
         $found | Format-Table Name, Description, HowToRun -AutoSize
     } else {
         Write-Host "  (No AI tools installed)" -ForegroundColor Yellow
     }
-    Write-Host "  ------------------------------" -ForegroundColor DarkCyan
+    Write-Host "  ------------------------------------------" -ForegroundColor DarkCyan
     Write-Host ""
 }
 
