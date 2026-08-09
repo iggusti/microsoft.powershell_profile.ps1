@@ -95,12 +95,13 @@ Set-Alias -Name okegas -Value RunAngularOpen -Description "Alias lain untuk menj
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-##-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#  AI CLI Tools Function  #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
 
 $Global:AITools = @(
-    @{ Name = 'opencode'; Desc = 'AI coding agent via terminal'; Run = 'opencode .' },
-    @{ Name = 'gemini';   Desc = 'Google Gemini CLI';            Run = 'gemini' },
-    @{ Name = 'codex';    Desc = 'OpenAI Codex CLI';             Run = 'codex' },
-    @{ Name = 'kilo';     Desc = 'Kilo Code CLI';                Run = 'kilo' },
-    @{ Name = 'kiro';     Desc = 'Kiro AI CLI';                  Run = 'kiro-cli' },
-    @{ Name = 'cline';    Desc = 'AI coding agent in terminal'; Run = 'cline' }
+    @{ Name = 'cline';    Desc = 'AI coding agent in terminal';   Run = 'cline' },
+    @{ Name = 'codex';    Desc = 'OpenAI Codex CLI';              Run = 'codex' },
+    @{ Name = 'freebuff'; Desc = 'Free AI coding agent';          Run = 'freebuff' },
+    @{ Name = 'gemini';   Desc = 'Google Gemini CLI';             Run = 'gemini' },
+    @{ Name = 'kilo';     Desc = 'Kilo Code CLI';                 Run = 'kilo' },
+    @{ Name = 'kiro';     Desc = 'Kiro AI CLI';                   Run = 'kiro-cli' },
+    @{ Name = 'opencode'; Desc = 'AI coding agent via terminal';  Run = 'opencode .' }
 )
 
 function ShowAIList {
