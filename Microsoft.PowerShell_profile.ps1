@@ -95,6 +95,7 @@ Set-Alias -Name okegas -Value RunAngularOpen -Description "Alias lain untuk menj
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-##-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#  AI CLI Tools Function  #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
 
 $Global:AITools = @(
+    @{ Name = '9router';     Desc = '9Router AI Router CLI';     Run = '9router' },
     @{ Name = 'antigravity'; Desc = 'Google Antigravity CLI';      Run = 'agy' },
     @{ Name = 'cline';       Desc = 'AI coding agent in terminal'; Run = 'cline' },
     @{ Name = 'codex';       Desc = 'OpenAI Codex CLI';            Run = 'codex' },
@@ -102,8 +103,7 @@ $Global:AITools = @(
     @{ Name = 'gemini';      Desc = 'Google Gemini CLI';           Run = 'gemini' },
     @{ Name = 'kilo';        Desc = 'Kilo Code CLI';               Run = 'kilo' },
     @{ Name = 'kiro';        Desc = 'Kiro AI CLI';                 Run = 'kiro-cli' },
-    @{ Name = 'opencode';    Desc = 'AI coding agent via terminal'; Run = 'opencode .' }
-)
+    @{ Name = 'opencode';    Desc = 'AI coding agent via terminal'; Run = 'opencode .' })
 
 function ShowAIList {
     $found = @()
