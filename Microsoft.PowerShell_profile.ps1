@@ -67,7 +67,7 @@ function NavigateEMoM { cd "~\Code\Work\Telkom University\Front End\emom" }
 function NavigateOneDataUSU { cd "~\Code\Work\Telkom University\Front End\one-data-usu" }
 function NavigateSOANG { cd "~\Code\Work\Telkom University\Front End\soang" }
 function NavigateTAPA { cd "~\Code\Work\Telkom University\Front End\ta-pa" }
-function NavigatePenDok { cd "~\Code\Work\Telkom University\Front End\document-management" }
+function NavigatePenDok { cd "~\Code\Work\Telkom University\Front End\pendok" }
 function NavigateArsenic { cd "C:\xamppOld\htdocs\igracias-telu\branch\arsenic"; code .; start . }
 function ViewGitPrettyLog { git log --pretty='%C(cyan)%ad %C(yellow)%h %C(cyan)%d %Creset%s' --date-order --graph --date=iso }
 function RunVSCode { code . }
@@ -95,8 +95,9 @@ Set-Alias -Name okegas -Value RunAngularOpen -Description "Alias lain untuk menj
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-##-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#  AI CLI Tools Function  #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
 
 $Global:AITools = @(
-    @{ Name = '9router';     Desc = '9Router AI Router CLI';     Run = '9router' },
+    @{ Name = '9router';    Desc = '9Router AI Router CLI';     Run = '9router' },
     @{ Name = 'antigravity'; Desc = 'Google Antigravity CLI';      Run = 'agy' },
+    @{ Name = 'claude';     Desc = 'Anthropic Claude CLI';      Run = 'claude' },
     @{ Name = 'cline';       Desc = 'AI coding agent in terminal'; Run = 'cline' },
     @{ Name = 'codex';       Desc = 'OpenAI Codex CLI';            Run = 'codex' },
     @{ Name = 'freebuff';    Desc = 'Free AI coding agent';        Run = 'freebuff' },
