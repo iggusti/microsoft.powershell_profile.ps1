@@ -1,0 +1,4 @@
+# Folder modul lokal — jangan ikut di-commit oleh pushprofile
+Modules/
+*.bak
+*.bak-*

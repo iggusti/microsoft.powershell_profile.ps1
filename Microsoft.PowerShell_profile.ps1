@@ -4,9 +4,9 @@ Import-Module -Name Terminal-Icons
 # Definisi fungsi-fungsi untuk akses cepat ke profil PowerShell
 function ShowProfilePS1 { bat $profile }
 function EditProfilePS1nano { nano $profile }
-function EditProfilePS1nvim { cd "~\OneDrive\Dokumen\WindowsPowerShell"; nvim . }
+function EditProfilePS1nvim { cd "~\OneDrive\Dokumen\PowerShell"; nvim . }
 function EditProfilePS1notepad { notepad $profile }
-function PushToGithubPS1 { cd "~\OneDrive\Dokumen\WindowsPowerShell"; git add .; git commit -m "update Microsoft.PowerShell_profile.ps1"; git push; git log --pretty='%C(cyan)%ad %C(yellow)%h %C(cyan)%d %Creset%s' --date-order --graph --date=iso }
+function PushToGithubPS1 { cd "~\OneDrive\Dokumen\PowerShell"; git add .; git commit -m "update Microsoft.PowerShell_profile.ps1"; git push; git log --pretty='%C(cyan)%ad %C(yellow)%h %C(cyan)%d %Creset%s' --date-order --graph --date=iso }
 function GetPowerShellHistory { notepad (Get-PSReadlineOption).HistorySavePath }
 
 function NewDirectory { param($Path) New-Item -ItemType Directory -Path $Path }
